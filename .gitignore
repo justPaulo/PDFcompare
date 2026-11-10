@@ -1,0 +1,33 @@
+# Build output (PDF Compare.app, temp icon files)
+build/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Swift Package Manager / Xcode (in case you open it there later)
+.build/
+.swiftpm/
+DerivedData/
+*.xcodeproj/xcuserdata/
+xcuserdata/
+*.xcworkspace/xcuserdata/
+
+# Compiled artifacts and debug symbols
+*.o
+*.swiftmodule
+*.swiftdoc
+*.dSYM/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs
+*.log
