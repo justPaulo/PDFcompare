@@ -37,30 +37,21 @@ A lot of PDF comparison tools are either web-based, locked behind pricey subscri
 - Clear page status indicators for added/removed/mutated pages
 - Works on Apple Silicon and Intel Macs
 
-## Run it locally
+## Build and run
 
-Requirements:
+You need macOS and the Swift compiler from Xcode Command Line Tools. Xcode itself is not required. The build script targets macOS 27.0 by default.
 
-- macOS
-- Swift toolchain
-- optional: Xcode if you want to open the project in the IDE
-
-Build the app:
+From the project directory, build and launch the app:
 
 ```bash
 bash build.sh
-```
-
-This creates an app bundle at:
-
-```bash
-build/PDF Compare.app
-```
-
-Then open it with:
-
-```bash
 open "build/PDF Compare.app"
+```
+
+The app bundle is created at `build/PDF Compare.app`. If your installed SDK does not recognize macOS 27.0, build with a macOS 26.0 deployment target instead:
+
+```bash
+MIN_OS=26.0 bash build.sh
 ```
 
 ## Architecture
